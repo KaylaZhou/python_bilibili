@@ -17,6 +17,22 @@ while  判断条件  :
 
 ```
 
+## `while else` 语法
+
+```py
+
+ while 判断条件 :
+        print()
+ else:   #不在满足while后的条件时,启动.
+        print()
+
+```
+
+## 关键字
+
+- `break` ,跳出整个循环,种植终止循环.
+- `continue` ,跳出本次循环.
+
 ### 练习题:
 
 ```py
@@ -75,6 +91,19 @@ continue   # 跳出本次循环
 else:
 print(val_3)
 '''
+
+
+
+'''
+while True:
+    print('你好')
+    while True:
+        print(666)
+        break  # 终止第二个循环(输出结果:你好 666 你好 666 .......)
+    break   # 终止所有循环(输出结果:你好 666)
+'''
+
+
 
 
 ```

@@ -1,3 +1,5 @@
+
+# 1.While练习:
 # 练习一,通过循环,给每次输出的结果加 1
 '''
 num_1 = 1
@@ -27,7 +29,7 @@ while val_1 <= 10:
 
 
 '''
-#注: 错误例子
+# 注: 错误例子
 val_1 = 1
 while val_1 <= 10 and val_1 != 7:  # 此时会同时满足条件时,停止打印.输出结果为1...6,
     print(val_1)
@@ -55,3 +57,13 @@ while val_3 <= 10:
     else:
         print(val_3)
 '''
+
+
+# 2.While.else练习:
+
+while True:
+    print('你好')
+    while True:
+        print(666)
+        break  # 终止第二个循环(输出结果:你好 666 你好 666 .......)
+    break   # 终止所有循环(输出结果:你好 666)
