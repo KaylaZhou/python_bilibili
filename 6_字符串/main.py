@@ -68,3 +68,26 @@ print(example)
 # f2 = bool(f1)
 # print(f2)  # True
 '''
+
+
+
+
+import types
+def num_1():
+    n = '123'
+    n_1 = 1.768
+    print(type(n))
+
+
+num_1()
+
+
+def judge():
+
+    # type() == type(1)
+
+    # type() == type('a')
+    print(type(313))
+
+
+# judge()
