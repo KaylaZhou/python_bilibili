@@ -41,4 +41,20 @@ def num():
 #         11
 
 
-num()
+# num()
+
+
+def value():
+    # max,min
+    print(max([1, 2, 3, 6, 8, 10, 7]))
+    print(min([1, 2, 3, 6, 8, 10, 7]))
+    print(max('hello world'))
+    print(min('hello world'))  # 为空值,涉及到字符编码 ascll码
+    print(min('helloworld'))  # 去掉空格后
+
+
+value()
+# print(ord('u'))
+# print(ord('k'))
+# print(ord('w'))
+# print(ord(' '))  # 空字符串,对应的ascll码值为32
