@@ -104,5 +104,63 @@
 # # if 1 > 0 and 1 > 2:
 # #     print('666')
 
+# b = 1
+# b += b >= 1
+# print(b)
 
-"范德萨范德萨的"
+def judge():
+    # 成员运算符,字典的用法:
+
+    b = '1'
+    print(b in {'a': 2})  # False
+
+    b = 2
+    print(b in {'a': 2})  # False
+
+    b = 'a'
+    print(b in {'a': 2})  # True  字典中以key为判断依据
+
+
+# judge()
+
+
+def judge_1():
+    # 身份运算符;
+
+    # a = {1, 2, 3}
+    # b = {2, 1, 3}
+    # print(a is b)   # False a和d的id()函数不同
+    # print(a == b)  # True 集合是无序的,值相等
+
+    c = (1, 2, 3)
+    e = (2, 1, 3)
+    print(c is e)  # False c和e的 id()函数不同
+    print(c == e)  # False 元组是有序的,值不相等
+
+
+# judge_1()
+
+def mold():
+    # 判断变量的值,身份与类型
+    a = 'kayla'
+
+    print(type(a) == int)  # False
+    print(type(a) == str)  # True
+    print(isinstance(a, str))  # True
+    print(isinstance(a, int))  # False
+    print(isinstance(a, (int, str, float)))  # True
+    print(isinstance(a, (int,  float)))  # False
+
+
+# mold()
+
+# 位运算符 &
+# 先转换成十进制;再转换为二进制;最后把二进制的数字做比较;得出结果
+# 比较方法:如果, 2和 3 的二进制分别是10,11, 两组数字纵向比较,相对应的都为 1, 结果为1; 有一个为0, 结果则为o.
+a = 2
+b = 3
+print(a & 3)  # 2  a的二进制数位1 0, b的二进制数位1 1,
+print(a | b)  # 3 只要有一个位1,得到的结果是1,最终结果是而二进制的1,转换位十进制就是3
+
+10
+11
