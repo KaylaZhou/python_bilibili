@@ -58,7 +58,7 @@ while val_3 <= 10:
         print(val_3)
 '''
 
-
+'''
 # 2.While.else练习:
 
 while True:
@@ -67,3 +67,27 @@ while True:
         print(666)
         break  # 终止第二个循环(输出结果:你好 666 你好 666 .......)
     break   # 终止所有循环(输出结果:你好 666)
+'''
+
+
+def counter():
+
+    counter = 1
+    while counter <= 10:
+        counter += 1
+        print(counter)
+    else:
+        print('结束')
+
+
+# counter()
+
+
+# for循环
+# for x in range(1, 10, 2):  # range,表示取值范围.2表示步长
+#     # print(x, end='')  # end='',表示将结果打印为一行
+#     print(x, end='|')  # '|',用分隔符将结果分隔开
+
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+b = a[0:len(a):2]
+print(b)

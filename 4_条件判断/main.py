@@ -29,18 +29,16 @@ def criteria_1():
     else:
         pass
 
-
 # criteria_1()
 
 
-def criteria_2():
+# def criteria_2():
     # 练习: 打印结果为: a和b不可能同时为False
-    # 方法一:
-    a = 1
-    b = 0
-    # print(a or b)
+    # 方法二:
+a = 1
+b = 0
 
-    a or b
+print(a or b)
 
 
-criteria_2()
+# criteria_2()
