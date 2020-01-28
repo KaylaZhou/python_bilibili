@@ -83,4 +83,4 @@ def demo():
     print(a)   # python中在for循环外部可以引用for循环内部的变量
 
 
-demo()
+# demo()
