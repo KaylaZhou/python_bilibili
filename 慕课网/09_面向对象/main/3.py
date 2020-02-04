@@ -3,11 +3,13 @@ class Student():
     name = ''
     age = 0
 
-    def __init__(self):
+    def __init__(self, name, age):
+      # 实例变量(通过sele.变量名形成)
         self.name = name
-        age = age
-        print('student')
+        self.age = age
+        print(self.name)
+        print(self.age)
 
 
-student1 = Student()
-print()
+student1 = Student('kayla', 18)
+# print(self.name)
