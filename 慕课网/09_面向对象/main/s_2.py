@@ -7,3 +7,6 @@ class Human():  # 父类
 
     def get_name(self):
         print(self.name)
+
+    def do_homework(self):
+        print('这是一个父类方法')
