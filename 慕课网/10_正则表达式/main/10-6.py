@@ -57,4 +57,32 @@ def x3():
     print(r)
 
 
-x3()
+# x3()
+
+
+def cc1():
+    # group()分组-- 练习:获取life与python的中间内容
+
+    c = 'life is short,i use python'
+
+    r1 = re.search('life.*python', c)
+    r2 = re.search('(life.*python)', c)  # 用()括号括起来,此时只有一个组分,加括号和不加括号结果是一致的
+    print(r1.group(0))   # group()是可以传入一个参数的,可以指定要获取的组号
+    print(r2.group(0))
+
+    z1 = re.search('life(.*)python', c)
+    print(z1.group(0))  # 0 永远表示匹配group的完整结果
+    print(z1.group(1))  # 1 表示第一个分组的取值
+
+    # 推荐使用findall
+    s1 = re.findall('life(.*)python', c)
+    print(s1)
+
+
+# cc1()
+
+# group() 分组
+d = 'life is short,i use python,i love python'
+e = re.search('life(.*)python(.*)python', d)
+print(e.group(0, 1, 2))
+print(e.groups())
