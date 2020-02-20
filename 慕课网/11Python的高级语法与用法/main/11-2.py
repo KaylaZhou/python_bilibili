@@ -15,6 +15,7 @@ def f1():
 # print(f1.__closure__)
 
 
+# 使用非闭包解决问题
 origin = 0
 
 
@@ -25,6 +26,18 @@ def go(step):
     return new_pos
 
 
-print(go(2))
-print(go(3))
-print(go(6))
+# print(go(2))
+# print(go(3))
+# print(go(6))
+
+
+origin = 0
+
+
+def factory(pos):
+    def go(step):
+        new_pos = pos + step
+        pos = new_pos
+
+
+f = factory()
