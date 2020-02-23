@@ -4,7 +4,7 @@ def f1():
     def f2():
         a = 20
     # return a
-    #     print(a)  # 20
+    #    print(a)  # 20
     # print(a)  # 10
     # f2()
     # print(a)  # 10

@@ -23,12 +23,12 @@ r4 = re.findall('000', qq)
 r5 = re.findall('^000', qq)  # 不符合匹配,因为字符串的开始是1
 r6 = re.findall('000&', qq)   # 不符合匹配,因为字符串的末尾是1
 
-print(r1)
-print(r2)
-print(r3)
-print(r4)
-print(r5)
-print(r6)
+# print(r1)
+# print(r2)
+# print(r3)
+# print(r4)
+# print(r5)
+# print(r6)
 
 
 # 组

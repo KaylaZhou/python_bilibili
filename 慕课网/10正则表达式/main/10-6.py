@@ -37,7 +37,7 @@ def x2():
     print(s1)
 
 
-# x2()
+x2()
 
 
 # 把函数作为参数传递
@@ -84,5 +84,5 @@ def cc1():
 # group() 分组
 d = 'life is short,i use python,i love python'
 e = re.search('life(.*)python(.*)python', d)
-print(e.group(0, 1, 2))
-print(e.groups())
+# print(e.group(0, 1, 2))
+# print(e.groups())

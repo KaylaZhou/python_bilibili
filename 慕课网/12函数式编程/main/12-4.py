@@ -11,4 +11,4 @@ def c():
     print(list(r1))
 
 
-# c()
+c()
