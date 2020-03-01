@@ -1,16 +1,12 @@
 from urllib import request
 
 
-class Crawler():
-    url = 'https://www.jianshu.com/'
-
-    def __fetch_content(self):
-        r = request.urlopen(Crawler.url)
-        html = r.read()  # 用read方法读取url结果
-
-    def go(self):
-        self.__fetch_content()
+def getPage(url):
+    request = urllib.request.Request(url)
+    response = urllib.request.urlopen(request)
+    return response.read().decode("utf-8")
 
 
-crawler = Crawler()
-crawler.go()
+url = 'https://www.jianshu.com/'
+result = getPage(url)
+print(result)
