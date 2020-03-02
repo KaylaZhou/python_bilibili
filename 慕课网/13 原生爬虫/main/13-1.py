@@ -1,3 +1,4 @@
-#
+from pyquery import PyQuery as pq
 
-import pyquery
+doc = pq("http://www.jianshu.com")
+print(doc)
