@@ -1,11 +1,14 @@
 from urllib import request
 
-url = 'https://www.shui5.cn/article/FaGuiJieDu/'
-ff = request.urlopen(url)
-htmldata = ff.read()
-# html = htmldata.decode('UTF-8')
+reqUrl = "http://www.jianshu.com"
 
-with open('./shui5.html', 'w', encoding='utf-8') as code:
-    code.write(str(htmldata))
+req = request.Request(reqUrl)
+req.add_header('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36 Edg/80.0.361.62')
 
-print(str(htmldata))
+resp = request.urlopen(req)
+
+html = resp.read()
+
+writeTxt = html.decode('utf-8')
+
+# 写文件
