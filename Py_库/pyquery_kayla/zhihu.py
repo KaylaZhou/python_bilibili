@@ -5,10 +5,10 @@ f = request.urlopen(url)
 htmldata = f.read()
 # html = htmldata.decode('UTF-8')
 
-with open(url, 'w', encoding='UTF-8') as code:
-    code.write(htmldata)
+with open('./zhihu.html', 'w') as code:
+    code.write(str(htmldata))
 
-print(htmldata)
+print(str(htmldata))
 
 
 # url = 'http://www.shui5.cn/'
