@@ -12,11 +12,10 @@ writeTxt = html.decode('utf-8')
 
 # 写文件
 
-# file = open("jianshu.html", "w", encoding='utf-8')  # a 以追加的方式打开 (默认以只读方式打开)
-# with open("readme.txt") as file:   # 这种方式,会自动close()释放资源
+file = open("jianshu.html", "w", encoding='utf-8')  # a 以追加的方式打开 (默认以只读方式打开)
 
 # 2. 写入文件
-# file.write(writeTxt)
+file.write(writeTxt)
 
 # 3. 关闭
-# file.close()
+file.close()

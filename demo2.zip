@@ -1,0 +1,582 @@
+ <!doctype html>
+<html lang="en">
+<head>
+<meta charset="gb2312">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<base href="http://www.shui5.cn" />
+<TITLE>税屋——第一时间传递财税政策法规！</TITLE>
+<meta name="keywords" content="财税政策、财税法规、财税培训、财税实务、个税汇算清缴、所得税汇算清缴、加计扣除、专项附加扣除">
+<meta name="description" content="作为国内知名财税政策法规传播平台之一的税屋网，创建于2008，经过多年运营，目前已成为财税政策、财税资讯领域，极具人气的综合性网站。其深厚的专业内涵和丰富的资讯容量，赢得了包括财税政务人群、财税职场人群、财税学习人群在内的大批忠实用户，该网站在百度、360等主流搜索引擎中的排名推荐，也常年名列前茅，在业内有着非常重要的影响力和上佳的口碑效应。">
+<link href="/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="/css/base.css" type="text/css" rel="stylesheet" />
+<link href="/css/main.css" type="text/css" rel="stylesheet" />
+<!--[if lte IE 9]>
+<script src="/js/respond.js"></script>
+<script src="/js/html5.js"></script>
+<![endif]-->
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/superslide.2.1.js"></script>
+<script src="/js/jquery.lazyload.js"></script>
+<script type="text/javascript">
+	var curIndex = 0;
+	var fcTimer;
+	$(function(){
+		$('.yema li').eq(curIndex).attr("class","cur");
+		$('.fc_pics .pica').eq(curIndex).css({"display":"block"});
+		fcTimer = setInterval("focusDo.indexChange()",3000);
+		$('.fc_pics').hover(function(){
+			clearInterval(fcTimer);
+		},function(){
+			fcTimer = setInterval("focusDo.indexChange()",3000);
+		});
+		$('.fc_pics .yema li').hover(function(){
+			var cIndex = $(this).index();
+			focusDo.cntShow(cIndex);
+			curIndex = cIndex;
+		},function(){});
+		$('.fc_pics .pre').click(function(){
+			curIndex -= 1;
+			if(curIndex < 0){
+				curIndex = 4;
+			}
+			focusDo.cntShow(curIndex);
+		});
+		$('.fc_pics .nxt').click(function(){
+			curIndex += 1;
+			if(curIndex >=4){
+				curIndex = 0;
+			}
+			focusDo.cntShow(curIndex);
+		});
+	});
+	var focusDo = {
+		cntShow : function(cIndex){
+			$('.fc_pics .pica').css({"display":"none"});
+			$('.fc_pics .pica').eq(cIndex).css({"display":"block"});
+			$('.fc_pics .yema li').removeClass();
+			$('.fc_pics .yema li').eq(cIndex).attr("class","cur");
+		},
+		indexChange : function(){
+			curIndex += 1;
+			if(curIndex == 4){
+				curIndex = 0;
+			}
+			this.cntShow(curIndex);
+		}
+	};
+</script>
+<script type="text/javascript">
+	var showeffect = ""; 
+	{showeffect = "fadeIn"} 
+	jQuery(document).ready(function($) { 
+		$("img").lazyload({ 
+			placeholder: "/style/grey.gif", 
+			effect: showeffect, 
+			failurelimit: 10
+		}) 
+	});
+</script>
+</head>
+
+<body>
+<!--header-->
+<div id="header" class="container mt15 mb10">
+	<div class="row">
+        <div class="col-sm-4">
+            <a href="/" id="logo" title="税屋——第一时间传递财税政策法规！"><img src="/images/logo.png" alt="税屋——第一时间传递财税政策法规！" title="税屋——第一时间传递财税政策法规！" /></a>
+        </div>
+        <div class="col-sm-5 hidden-xs topForm pt20 col-sm-offset-3">
+            <form name="formsearch" action="/plus/search.php" class="fr clearfix" style="display:block;">
+                <input type="hidden" value="0" name="kwtype">
+                <input type="text" onclick="if(this.value=='请输入关键词')this.value=''" onblur="if (this.value ==''){this.value=this.defaultValue}" value="请输入关键词" class="s_w" name="q">
+                <input type="submit" style="border:0" value="搜 索" class="an" name="submit">
+            </form>
+        </div>
+    </div>
+</div>
+<!--/header-->
+<!--nav-->
+<nav class="navbar mt35" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="nav navbar-nav">
+                <li><a href="/">首页</a></li>
+                <li><a href="/article/FaGuiJieDu/">法规解读</a></li>
+                <li><a href="/article/NianDuCaiShuiFaGui/">年度财税法规</a></li>
+                <li><a href="/article/ShuiWuChouHua/">税务筹划</a></li>
+                <li><a href="/article/DiFangCaiShuiFaGui/">地方财税法规</a></li>
+                <li><a href="/article/ShuiShouYouHui/">税收优惠</a></li>
+                <li><a href="/article/ShuiWuWenDa/">税务问答</a></li>
+                <li><a href="/article/KuaiJiWenDa/">会计问答</a></li>
+                <li><a href="/article/NaShuiTiaoZhen/">纳税调整</a></li>
+                <li><a href="/article/NaShuiPingGu/">纳税评估</a></li>
+                <li><a href="/article/QiYeSuoDeShui/">企业所得税</a></li>
+                <li><a href="/article/CaiShuiBiaoDan/">财税表单</a></li>
+                <li><a href="/article/Bulletin/">财税话题</a></li>
+            </ul>
+        </div>
+   </div>
+</nav>
+<!--/nav-->
+<!--scrollText-->
+<div class="txtScroll-left container">
+    <div class="bd">
+        <ul class="infoList">
+            <li><a title="避开这四个误区，才能正确理解小 " href="/article/e3/135550.html" target="_blank">避开这四个误区，才能正确理解小</a><span>【2020-03-02】</span></li>
+<li><a title="银保监发[2020]6号 银保监会 人 " href="/article/40/135544.html" target="_blank">银保监发[2020]6号 银保监会 人</a><span>【2020-03-02】</span></li>
+<li><a title="国家税务总局湖南省税务局关于下 " href="/article/80/135540.html" target="_blank">国家税务总局湖南省税务局关于下</a><span>【2020-03-02】</span></li>
+<li><a title="当大额销项错过了大额进项，怎么 " href="/article/58/135551.html" target="_blank">当大额销项错过了大额进项，怎么</a><span>【2020-03-02】</span></li>
+<li><a title="科技部办公厅关于做好国家高新区 " href="/article/aa/135549.html" target="_blank">科技部办公厅关于做好国家高新区</a><span>【2020-03-02】</span></li>
+<li><a title="证监办发[2020]14号 中国证监会 " href="/article/48/135546.html" target="_blank">证监办发[2020]14号 中国证监会</a><span>【2020-03-02】</span></li>
+<li><a title="发改财金[2020]298号 国家发展改 " href="/article/f5/135545.html" target="_blank">发改财金[2020]298号 国家发展改</a><span>【2020-03-02】</span></li>
+<li><a title="国家税务总局湖北省税务局关于办 " href="/article/b1/135541.html" target="_blank">国家税务总局湖北省税务局关于办</a><span>【2020-03-02】</span></li>
+<li><a title="案例解析个体户复工复业增值税减 " href="/article/3e/135553.html" target="_blank">案例解析个体户复工复业增值税减</a><span>【2020-03-02】</span></li>
+<li><a title="京房公积金发[2020]9号 北京住房 " href="/article/2b/135554.html" target="_blank">京房公积金发[2020]9号 北京住房</a><span>【2020-03-02】</span></li>
+
+        </ul>
+    </div>
+</div>
+<!--/scrollText-->
+<!--首页横屏广告1-->
+
+<div class="fullScreenAd container hidden-xs">
+	
+</div>
+
+<div class="fullScreenAd container hidden-xs" style="margin-top:5px">
+	
+</div>
+<!--/首页横屏广告1-->
+<!--box1-->
+<div id="box1" class="container mt10">
+	<div class="box1 row">
+    	<div class="col-sm-3">
+        	<!--图片滚动-->
+            <div class="fc_pics">
+              <ul class="yema">
+              	<li></li>
+<li></li>
+<li></li>
+<li></li>
+
+              </ul>
+              <div class="pica"> <a class="pica_link" href="/plus/view.php?aid=83010" title="1" target="_blank"><img class="img-responsive aligncenter" src="http://www.shui5.cn/uploads/allimg/151104/4.png" alt="1" /></a> <a class="pica_title" href="/plus/view.php?aid=83010" title="1" target="_blank">1</a> </div>
+<div class="pica"> <a class="pica_link" href="/plus/view.php?aid=83011" title="2" target="_blank"><img class="img-responsive aligncenter" src="/uploads/160830/6-160S0095R44D.jpg" alt="2" /></a> <a class="pica_title" href="/plus/view.php?aid=83011" title="2" target="_blank">2</a> </div>
+<div class="pica"> <a class="pica_link" href="/plus/view.php?aid=83012" title="3" target="_blank"><img class="img-responsive aligncenter" src="http://www.shui5.cn/uploads/allimg/151104/2.png" alt="3" /></a> <a class="pica_title" href="/plus/view.php?aid=83012" title="3" target="_blank">3</a> </div>
+<div class="pica"> <a class="pica_link" href="/plus/view.php?aid=83013" title="地方法规" target="_blank"><img class="img-responsive aligncenter" src="http://www.shui5.cn/uploads/allimg/151104/1.png" alt="地方法规" /></a> <a class="pica_title" href="/plus/view.php?aid=83013" title="地方法规" target="_blank">地方法规</a> </div>
+
+            </div>
+			<!--/图片滚动-->
+            <!--24小时热榜-->
+            <div id="hot24" class="mt10">
+                <h3>24小时热榜</h3>
+                <ul>
+                	<li><i class="i1">1</i><span><a title="避开这四个误区，才能正确理解小规模征收率调整的两个公告 " href="/article/e3/135550.html">避开这四个误区，才能正确理解小规模征收率调整的两个公告</a></span></li>
+<li><i class="i2">2</i><span><a title="银保监发[2020]6号 银保监会 人民银行 发展改革委 工业和信息化部 财政部关于对中小微企业贷款实施临时性延期还本付息的通知 " href="/article/40/135544.html">银保监发[2020]6号 银保监会 人民银行 发展改革委 工业和信息化部 财政部关于对中小微企业贷款实施临时性延期还本付息的通知</a></span></li>
+<li><i class="i3">3</i><span><a title="国家税务总局湖南省税务局关于下发2019年度企业所得税汇算清缴培训课件的通知 " href="/article/80/135540.html">国家税务总局湖南省税务局关于下发2019年度企业所得税汇算清缴培训课件的通知</a></span></li>
+<li><i class="i4">4</i><span><a title="当大额销项错过了大额进项，怎么办？ " href="/article/58/135551.html">当大额销项错过了大额进项，怎么办？</a></span></li>
+<li><i class="i5">5</i><span><a title="科技部办公厅关于做好国家高新区科学防疫推动企业有序复工复产的通知 " href="/article/aa/135549.html">科技部办公厅关于做好国家高新区科学防疫推动企业有序复工复产的通知</a></span></li>
+<li><i class="i6">6</i><span><a title="证监办发[2020]14号 中国证监会办公厅关于公开发行公司债券实施注册制有关事项的通知 " href="/article/48/135546.html">证监办发[2020]14号 中国证监会办公厅关于公开发行公司债券实施注册制有关事项的通知</a></span></li>
+<li><i class="i7">7</i><span><a title="发改财金[2020]298号 国家发展改革委关于企业债券发行实施注册制有关事项的通知 " href="/article/f5/135545.html">发改财金[2020]298号 国家发展改革委关于企业债券发行实施注册制有关事项的通知</a></span></li>
+<li><i class="i8">8</i><span><a title="国家税务总局湖北省税务局关于办理2020年2月份纳税申报有关事项的温馨提示 " href="/article/b1/135541.html">国家税务总局湖北省税务局关于办理2020年2月份纳税申报有关事项的温馨提示</a></span></li>
+<li><i class="i9">9</i><span><a title="案例解析个体户复工复业增值税减免会计处理及申报表的填写 " href="/article/3e/135553.html">案例解析个体户复工复业增值税减免会计处理及申报表的填写</a></span></li>
+<li><i class="i10">10</i><span><a title="京房公积金发[2020]9号 北京住房公积金管理中心关于妥善应对新冠肺炎疫情落实住房公积金阶段性支持政策的通知 " href="/article/2b/135554.html">京房公积金发[2020]9号 北京住房公积金管理中心关于妥善应对新冠肺炎疫情落实住房公积金阶段性支持政策的通知</a></span></li>
+
+                </ul>
+            </div>
+            <!--/24小时热榜-->
+        </div>
+    	<div class="col-sm-6">
+            <ul id="recommend">
+        		<!--头条-->
+            	<li>
+                	<a href="/article/92/135535.html" title="国家税务总局公告2020年第5号 国家税务总局关于支持个体工商户复工复业等税收征收管理事项的公告">
+                		<h4>国家税务总局公告2020年第5号 国家税务总局关于支持个体工商户复工复业等税收征收管理事项的公告</h4>
+                	</a>
+                    <p>增值税小规模纳税人取得应税销售收入，纳税义务发生时间在2020年2月底以前，适用3%征收率征收增值税的，按照3%征收率开具增值税...<a href="/article/92/135535.html" title="国家税务总局公告2020年第5号 国家税务总局关于支持个体工商户复工复业等税收征收管理事项的公告" target="_blank"><font>[详情]</font></a></p>
+                </li>
+<li>
+                	<a href="/article/97/135533.html" title="财政部 税务总局公告2020年第13号 财政部 税务总局关于支持个体工商户复工复业增值税政策的公告">
+                		<h4>财政部 税务总局公告2020年第13号 财政部 税务总局关于支持个体工商户复工复业增值税政策的公告</h4>
+                	</a>
+                    <p>自2020年3月1日至5月31日，对湖北省增值税小规模纳税人，适用3%征收率的应税销售收入，免征增值税；适用3%预征率的预缴增值税项...<a href="/article/97/135533.html" title="财政部 税务总局公告2020年第13号 财政部 税务总局关于支持个体工商户复工复业增值税政策的公告" target="_blank"><font>[详情]</font></a></p>
+                </li>
+<li>
+                	<a href="/article/c8/135490.html" title="税总函[2020]33号 国家税务总局关于贯彻落实阶段性减免企业社会保险费政策的通知">
+                		<h4>税总函[2020]33号 国家税务总局关于贯彻落实阶段性减免企业社会保险费政策的通知</h4>
+                	</a>
+                    <p>国家税务总局关于贯彻落实阶段性减免企业社会保险费政策的通知 税总函[2020]33号 2020-2-25 国家税务总局各...<a href="/article/c8/135490.html" title="税总函[2020]33号 国家税务总局关于贯彻落实阶段性减免企业社会保险费政策的通知" target="_blank"><font>[详情]</font></a></p>
+                </li>
+<li>
+                	<a href="/article/7b/135445.html" title="国务院：3至5月小规模纳税人按1%征收增值税，湖北免征">
+                		<h4>国务院：3至5月小规模纳税人按1%征收增值税，湖北免征</h4>
+                	</a>
+                    <p>李克强主持召开国务院常务会议 推出鼓励吸纳高校毕业生和农民工就业的措施 确定鼓励金融机构对中小微企业贷款给予临时性延期还本...<a href="/article/7b/135445.html" title="国务院：3至5月小规模纳税人按1%征收增值税，湖北免征" target="_blank"><font>[详情]</font></a></p>
+                </li>
+
+        		<!--推荐-->
+            	<li>
+                	<a href="/article/40/135544.html" title="银保监发[2020]6号 银保监会 人民银行 发展改革委 工业和信息化部 财政部关于对中小微企业贷款实施临时性延期还本付息的通知">
+                		<h4>银保监发[2020]6号 银保监会 人民银行 发展改革委 工业和信息化部 财政部关于对中小微企业贷款实施临时性延期还本付息的通知</h4>
+                	</a>
+                    <p>对于2020年1月25日至6月30日中小微企业需支付的贷款利息，银行业金融机构应根据企业延期付息申请，结合其受疫情影响的实际情况，...<a href="/article/40/135544.html" title="银保监发[2020]6号 银保监会 人民银行 发展改革委 工业和信息化部 财政部关于对中小微企业贷款实施临时性延期还本付息的通知" target="_blank"><font>[详情]</font></a></p>
+                </li>
+<li>
+                	<a href="/article/0a/135393.html" title="医保发[2020]6号 国家医保局 财政部 税务总局关于阶段性减征职工基本医疗保险费的指导意见">
+                		<h4>医保发[2020]6号 国家医保局 财政部 税务总局关于阶段性减征职工基本医疗保险费的指导意见</h4>
+                	</a>
+                    <p>国家医保局 财政部 税务总局关于阶段性减征职工基本医疗保险费的指导意见 医保发[2020]6号 2020-02-21 各...<a href="/article/0a/135393.html" title="医保发[2020]6号 国家医保局 财政部 税务总局关于阶段性减征职工基本医疗保险费的指导意见" target="_blank"><font>[详情]</font></a></p>
+                </li>
+
+        		<!--特荐-->
+            	<li>
+                	<a href="/article/7d/135311.html" title="财政部 税务总局公告2020年第12号 关于支持货物期货市场对外开放增值税政策的公告">
+                		<h4>财政部 税务总局公告2020年第12号 关于支持货物期货市场对外开放增值税政策的公告</h4>
+                	</a>
+                    <p>自2018年11月30日至2023年11月29日，对经国务院批准对外开放的货物期货品种保税交割业务，暂免征收增值税。...<a href="/article/7d/135311.html" title="财政部 税务总局公告2020年第12号 关于支持货物期货市场对外开放增值税政策的公告" target="_blank"><font>[详情]</font></a></p>
+                </li>
+<li>
+                	<a href="/article/83/135034.html" title="安徽税务抗疫税收业务即问即答">
+                		<h4>安徽税务抗疫税收业务即问即答</h4>
+                	</a>
+                    <p>为做好新型冠状病毒感染的肺炎防控工作，积极发挥税收在疫情防控中的作用，安徽省税务局制发《关于强化落实税费支持政策措施助力...<a href="/article/83/135034.html" title="安徽税务抗疫税收业务即问即答" target="_blank"><font>[详情]</font></a></p>
+                </li>
+
+            </ul>
+        </div>
+    	<div class="col-sm-3">
+        	<!--财税话题-->
+            <div id="caishuihuati">
+            	<div class="title">
+					<h3>财税话题</h3>
+					<a href="/article/Bulletin/">更多</a>
+                </div>
+                <dl>
+                	<dt><a title="国务院：3至5月小规模纳税人按1%征收增值税，湖北免征" href="/article/7b/135445.html">国务院：3至5月小规模纳税人按1%征收增值税，湖北免征</a></dt>
+        			<dd class="clearfix">
+                        <a title="国务院：3至5月小规模纳税人按1%征收增值税，湖北免征" href="/article/7b/135445.html" class="fl">
+                            <img alt="国务院：3至5月小规模纳税人按1%征收增值税，湖北免征" src="/uploads/allimg/200225/13-200225225449502-lp.png">
+                        </a>
+                        <p class="fl">李克强主持召开国务院常务会议 推出鼓励吸纳高校毕业生和农民工..<a target="_blank" href="/article/7b/135445.html"><font>[详情]</font></a></p>
+                    </dd>
+				</dl>
+<dl>
+                	<dt><a title="国务院联防联控机制就有序推动各类企业复工复产和稳岗就业工作情况举行发布会" href="/article/01/135356.html">国务院联防联控机制就有序推动各类企业复工复产和稳岗就业工作情况举行发布会</a></dt>
+        			<dd class="clearfix">
+                        <a title="国务院联防联控机制就有序推动各类企业复工复产和稳岗就业工作情况举行发布会" href="/article/01/135356.html" class="fl">
+                            <img alt="国务院联防联控机制就有序推动各类企业复工复产和稳岗就业工作情况举行发布会" src="/uploads/allimg/200220/13-200220115F0359-lp.png">
+                        </a>
+                        <p class="fl">国务院联防联控机制于2月19日召开新闻发布会，介绍有序推动各类..<a target="_blank" href="/article/01/135356.html"><font>[详情]</font></a></p>
+                    </dd>
+				</dl>
+<dl>
+                	<dt><a title="阶段性减免企业社保费 缓缴住房公积金" href="/article/81/135314.html">阶段性减免企业社保费 缓缴住房公积金</a></dt>
+        			<dd class="clearfix">
+                        <a title="阶段性减免企业社保费 缓缴住房公积金" href="/article/81/135314.html" class="fl">
+                            <img alt="阶段性减免企业社保费 缓缴住房公积金" src="/uploads/allimg/200218/13-20021Q95316394-lp.png">
+                        </a>
+                        <p class="fl">阶段性减免企业社保费 缓缴住房公积金 国务院总理李克强2月18日..<a target="_blank" href="/article/81/135314.html"><font>[详情]</font></a></p>
+                    </dd>
+				</dl>
+<dl>
+                	<dt><a title="2月份申报纳税期限再延长至2月28日" href="/article/ec/135293.html">2月份申报纳税期限再延长至2月28日</a></dt>
+        			<dd class="clearfix">
+                        <a title="2月份申报纳税期限再延长至2月28日" href="/article/ec/135293.html" class="fl">
+                            <img alt="2月份申报纳税期限再延长至2月28日" src="/uploads/allimg/200218/13-20021P94911252-lp.png">
+                        </a>
+                        <p class="fl">根据疫情防控工作情况，为便利纳税人、扣缴义务人统筹做好申报纳..<a target="_blank" href="/article/ec/135293.html"><font>[详情]</font></a></p>
+                    </dd>
+				</dl>
+<dl>
+                	<dt><a title="2020税法改革展望" href="/article/b9/135219.html">2020税法改革展望</a></dt>
+        			<dd class="clearfix">
+                        <a title="2020税法改革展望" href="/article/b9/135219.html" class="fl">
+                            <img alt="2020税法改革展望" src="/uploads/allimg/200213/1-2002131Q130603-lp.jpg">
+                        </a>
+                        <p class="fl">2013年十八届三中全会首次明确提出落实税收法定原则，2015年全国..<a target="_blank" href="/article/b9/135219.html"><font>[详情]</font></a></p>
+                    </dd>
+				</dl>
+<dl>
+                	<dt><a title="支持疫情防控和相关行业企业的财税金融政策将出台" href="/article/20/135031.html">支持疫情防控和相关行业企业的财税金融政策将出台</a></dt>
+        			<dd class="clearfix">
+                        <a title="支持疫情防控和相关行业企业的财税金融政策将出台" href="/article/20/135031.html" class="fl">
+                            <img alt="支持疫情防控和相关行业企业的财税金融政策将出台" src="http://www.shui5.cn/uploads/allimg/200206/22-200206194324347.jpeg">
+                        </a>
+                        <p class="fl">据央视新闻报道，国务院总理李克强2月5日主持召开国务院常务会议..<a target="_blank" href="/article/20/135031.html"><font>[详情]</font></a></p>
+                    </dd>
+				</dl>
+
+            </div>
+        	<!--/财税话题-->
+        </div>
+    </div>
+</div>
+<!--/box1-->
+<!--首页横屏广告2-->
+<div class="fullScreenAd container hidden-xs mt20">
+	
+</div>
+<!--/首页横屏广告2-->
+<!--box2-->
+<div id="box2" class="container mt20">
+	<div class="row">
+    	<!--indexBox-->
+    	<div class="indexBox col-sm-6">
+        	<dl class="clearfix orange">
+            	<dt class="fl">年度法规</dt>
+                <dd class="fl">
+                	<a href="/article/2020nianshuishoufagui/" class="hidden1">2020年税收法规</a><a href="/article/2019nianshuishoufagui/" class="hidden1">2019年税收法规</a><a href="/article/2018nianshuishoufagui/" class="hidden1">2018年税收法规</a><a href="/article/2017nianshuishoufagui/" class="hidden1">2017年税收法规</a>
+                </dd>
+                <dd class="fr"><a href="/article/NianDuCaiShuiFaGui/"><span>更多</span></a></dd>
+            </dl>
+            <div class="clearfix mt15">
+            	<a href="/article/97/135533.html" title="财政部 税务总局公告2020年第13号 财政部 税务总局关于支持个体工商户复工复业增值税政策的公告" class="fl"><img alt="财政部 税务总局公告2020年第13号 财政部 税务总局关于支持个体工商户复工复业增值税政策的公告" src="/uploads/allimg/200229/13-2002292115404B-lp.jpg"></a>
+                <div class="fl">
+                    <a title="财政部 税务总局公告2020年第13号 财政部 税务总局关于支持个体工商户复工复业增值税政策的公告" href="/article/97/135533.html"><font>财政部 税务总局公告2020年第13号 财政部 税务总局关于支持个体工商户复工复业增值税政策的公告</font></a>
+                    <p class="mt5"><a title="财政部 税务总局公告2020年第13号 财政部 税务总局关于支持个体工商户复工复业增值税政策的公告" href="/article/97/135533.html">自2020年3月1日至5月31日，对湖北省增值税小规模纳税人，适用3%征收率的应税销售收入...</a><a title="财政部 税务总局公告2020年第13号 财政部 税务总局关于支持个体工商户复工复业增值税政策的公告" href="/article/97/135533.html"><em>[详情]</em></a></p>
+                </div>
+
+            </div>
+            <ul>
+                <li><em>[<a href='/article/2020nianshuishoufagui/'>2020年税收法规</a>]</em><span><a href="/article/96/135563.html" title="财税[2020]9号 财政部关于国家重大水利工程建设基金、水利建设基金划转税务部门征收的通知">财税[2020]9号 财政部关于国家重大水利工程建设基金、水利建设基金划转税务部门征收的通知</a></span></li>
+<li><em>[<a href='/article/2020nianshuishoufagui/'>2020年税收法规</a>]</em><span><a href="/article/e0/135556.html" title="发改办财金[2020]176号 国家发展和改革委员会办公厅关于做好疫情防控重点保障物资生产企业名单管理有关工作的通知">发改办财金[2020]176号 国家发展和改革委员会办公厅关于做好疫情防控重点保障物资生产企业名单管理有关工作的通知</a></span></li>
+<li><em>[<a href='/article/2020nianshuishoufagui/'>2020年税收法规</a>]</em><span><a href="/article/17/135555.html" title="交财审明电[2020]79号 交通运输部关于做好交通运输企业财税金融优惠政策落实工作的通知">交财审明电[2020]79号 交通运输部关于做好交通运输企业财税金融优惠政策落实工作的通知</a></span></li>
+<li><em>[<a href='/article/2020nianshuishoufagui/'>2020年税收法规</a>]</em><span><a href="/article/aa/135549.html" title="科技部办公厅关于做好国家高新区科学防疫推动企业有序复工复产的通知">科技部办公厅关于做好国家高新区科学防疫推动企业有序复工复产的通知</a></span></li>
+<li><em>[<a href='/article/2020nianshuishoufagui/'>2020年税收法规</a>]</em><span><a href="/article/48/135546.html" title="证监办发[2020]14号 中国证监会办公厅关于公开发行公司债券实施注册制有关事项的通知">证监办发[2020]14号 中国证监会办公厅关于公开发行公司债券实施注册制有关事项的通知</a></span></li>
+<li><em>[<a href='/article/2020nianshuishoufagui/'>2020年税收法规</a>]</em><span><a href="/article/f5/135545.html" title="发改财金[2020]298号 国家发展改革委关于企业债券发行实施注册制有关事项的通知">发改财金[2020]298号 国家发展改革委关于企业债券发行实施注册制有关事项的通知</a></span></li>
+<li><em>[<a href='/article/2020nianshuishoufagui/'>2020年税收法规</a>]</em><span><a href="/article/40/135544.html" title="银保监发[2020]6号 银保监会 人民银行 发展改革委 工业和信息化部 财政部关于对中小微企业贷款实施临时性延期还本付息的通知">银保监发[2020]6号 银保监会 人民银行 发展改革委 工业和信息化部 财政部关于对中小微企业贷款实施临时性延期还本付息的通知</a></span></li>
+<li><em>[<a href='/article/2020nianshuishoufagui/'>2020年税收法规</a>]</em><span><a href="/article/92/135535.html" title="国家税务总局公告2020年第5号 国家税务总局关于支持个体工商户复工复业等税收征收管理事项的公告">国家税务总局公告2020年第5号 国家税务总局关于支持个体工商户复工复业等税收征收管理事项的公告</a></span></li>
+<li><em>[<a href='/article/2020nianshuishoufagui/'>2020年税收法规</a>]</em><span><a href="/article/97/135533.html" title="财政部 税务总局公告2020年第13号 财政部 税务总局关于支持个体工商户复工复业增值税政策的公告">财政部 税务总局公告2020年第13号 财政部 税务总局关于支持个体工商户复工复业增值税政策的公告</a></span></li>
+<li><em>[<a href='/article/2020nianshuishoufagui/'>2020年税收法规</a>]</em><span><a href="/article/8a/135526.html" title="发改办体改[2020]175号 关于积极发挥行业协会商会作用支持民营中小企业复工复产的通知">发改办体改[2020]175号 关于积极发挥行业协会商会作用支持民营中小企业复工复产的通知</a></span></li>
+
+            </ul>
+        </div>
+    	<!--/indexBox-->
+    	<div class="col-sm-6 indexBox">
+            <!--indexBox-->
+            <dl class="clearfix blue">
+                <dt class="fl">法规解读</dt>
+                <dd class="fl">
+                	
+                </dd>
+                <dd class="fr"><a href="/article/FaGuiJieDu/"><span>更多</span></a></dd>
+            </dl>
+            <div class="clearfix mt15">
+            	<a href="/article/f2/135565.html" title="减按1%征收率计税销售额计算方式分析" class="fl"><img alt="减按1%征收率计税销售额计算方式分析" src="/uploads/allimg/200303/13-200303103253a0-lp.jpg"></a>
+                <div class="fl">
+                    <a title="减按1%征收率计税销售额计算方式分析" href="/article/f2/135565.html"><font>减按1%征收率计税销售额计算方式分析</font></a>
+                    <p class="mt5"><a title="减按1%征收率计税销售额计算方式分析" href="/article/f2/135565.html">财政部、税务总局2020年第13号公告规定自2020年3月1日至5月31日，......除湖北省外，...</a><a title="减按1%征收率计税销售额计算方式分析" href="/article/f2/135565.html"><em>[详情]</em></a></p>
+                </div>
+
+            </div>
+            <ul>
+                <li><em>[<a href='/article/FaGuiJieDu/'>法规解读</a>]</em><span><a href="/article/2c/135573.html" title="对征收率3%下调为1%相关问题的看法">对征收率3%下调为1%相关问题的看法</a></span></li>
+<li><em>[<a href='/article/FaGuiJieDu/'>法规解读</a>]</em><span><a href="/article/82/135571.html" title="征收率降至1%、降为1%与减按1%辨析">征收率降至1%、降为1%与减按1%辨析</a></span></li>
+<li><em>[<a href='/article/FaGuiJieDu/'>法规解读</a>]</em><span><a href="/article/bd/135568.html" title="减按1%期间，建议允许开具3%的专票">减按1%期间，建议允许开具3%的专票</a></span></li>
+<li><em>[<a href='/article/FaGuiJieDu/'>法规解读</a>]</em><span><a href="/article/0c/135566.html" title="减征增值税新政相关问题梳理">减征增值税新政相关问题梳理</a></span></li>
+<li><em>[<a href='/article/FaGuiJieDu/'>法规解读</a>]</em><span><a href="/article/f2/135565.html" title="减按1%征收率计税销售额计算方式分析">减按1%征收率计税销售额计算方式分析</a></span></li>
+<li><em>[<a href='/article/FaGuiJieDu/'>法规解读</a>]</em><span><a href="/article/ee/135564.html" title="股息红利免税也是个值得玩味的问题">股息红利免税也是个值得玩味的问题</a></span></li>
+<li><em>[<a href='/article/FaGuiJieDu/'>法规解读</a>]</em><span><a href="/article/3e/135553.html" title="案例解析个体户复工复业增值税减免会计处理及申报表的填写">案例解析个体户复工复业增值税减免会计处理及申报表的填写</a></span></li>
+<li><em>[<a href='/article/FaGuiJieDu/'>法规解读</a>]</em><span><a href="/article/58/135551.html" title="当大额销项错过了大额进项，怎么办？">当大额销项错过了大额进项，怎么办？</a></span></li>
+<li><em>[<a href='/article/FaGuiJieDu/'>法规解读</a>]</em><span><a href="/article/e3/135550.html" title="避开这四个误区，才能正确理解小规模征收率调整的两个公告">避开这四个误区，才能正确理解小规模征收率调整的两个公告</a></span></li>
+<li><em>[<a href='/article/FaGuiJieDu/'>法规解读</a>]</em><span><a href="/article/ef/135522.html" title="抗击疫情，组织员工公益捐赠，财务人员需提醒注意哪些细节？">抗击疫情，组织员工公益捐赠，财务人员需提醒注意哪些细节？</a></span></li>
+
+            </ul>
+            <!--/indexBox-->
+        </div>
+    </div>
+</div>
+<!--/box2-->
+<!--首页横屏广告3-->
+<div class="fullScreenAd container hidden-xs mt20"></div>
+<!--/首页横屏广告3-->
+<!--box2-->
+<div id="box2" class="container mt20">
+	<div class="row">
+    	<!--indexBox-->
+    	<div class="indexBox col-sm-6">
+            <dl class="clearfix purple">
+                <dt class="fl">地方法规</dt>
+                <dd class="fl">
+                	<a href="/article/AnHuiShengCaiShuiFaGui/" class="hidden[field:global name=autoindex/]">安徽省财税法规</a><a href="/article/BeiJingShiCaiShuiFaGui/" class="hidden[field:global name=autoindex/]">北京市财税法规</a><a href="/article/ShangHaiShiCaiShuiFaGui/" class="hidden[field:global name=autoindex/]">上海市财税法规</a><a href="/article/TianJinShiCaiShuiFaGui/" class="hidden[field:global name=autoindex/]">天津市财税法规</a>
+                </dd>
+                <dd class="fr"><a href="/article/DiFangCaiShuiFaGui/"><span>更多</span></a></dd>
+            </dl>
+            <div class="clearfix mt15">
+            	<a href="/article/0e/135558.html" title="国家税务总局北京市税务局关于推行区块链电子普通发票有关事项的公告" class="fl"><img alt="国家税务总局北京市税务局关于推行区块链电子普通发票有关事项的公告" src="/uploads/allimg/200303/13-2003030UJ2427-lp.jpg"></a>
+                <div class="fl">
+                    <a title="国家税务总局北京市税务局关于推行区块链电子普通发票有关事项的公告" href="/article/0e/135558.html"><font>国家税务总局北京市税务局关于推行区块链电子普通发票有关事项的公告</font></a>
+                    <p class="mt5"><a title="国家税务总局北京市税务局关于推行区块链电子普通发票有关事项的公告" href="/article/0e/135558.html">国家税务总局北京市税务局关于推行区块链电子普通发票有关事项的公告 为降低纳税人经...</a><a title="国家税务总局北京市税务局关于推行区块链电子普通发票有关事项的公告" href="/article/0e/135558.html"><em>[详情]</em></a></p>
+                </div>
+
+            </div>
+            <ul>
+                <li><em>[<a href='/article/GuangDongShengCaiShuiFaGu/'>广东省财税法规</a>]</em><span><a href="/article/72/135570.html" title="穗府规[2020]2号 广州市人民政府关于印发广州市坚决打赢新冠肺炎疫情防控阻击战努力实现全年经济社会发展目标任务若干措施的通知">穗府规[2020]2号 广州市人民政府关于印发广州市坚决打赢新冠肺炎疫情防控阻击战努力实现全年经济社会发展目标任务若干措施的通知</a></span></li>
+<li><em>[<a href='/article/HeNanShengCaiShuiFaGui/'>河南省财税法规</a>]</em><span><a href="/article/94/135569.html" title="国家税务总局河南省税务局新冠肺炎疫情防控税收优惠政策问答[第一期]">国家税务总局河南省税务局新冠肺炎疫情防控税收优惠政策问答[第一期]</a></span></li>
+<li><em>[<a href='/article/GanSuShengCaiShuiFaGui/'>甘肃省财税法规</a>]</em><span><a href="/article/06/135562.html" title="甘肃省财政厅公告2020年第1号 甘肃省关于国家重大水利工程建设基金、水利建设基金划转税务部门征收的公告">甘肃省财政厅公告2020年第1号 甘肃省关于国家重大水利工程建设基金、水利建设基金划转税务部门征收的公告</a></span></li>
+<li><em>[<a href='/article/JiangSuShengCaiShuiFaGui/'>江苏省财税法规</a>]</em><span><a href="/article/5c/135561.html" title="苏医保发[2020]14号 江苏省医疗保障局 江苏省财政厅 国家税务总局江苏省税务局关于印发《关于阶段性减征职工基本医疗保险费的实施方案》的通知">苏医保发[2020]14号 江苏省医疗保障局 江苏省财政厅 国家税务总局江苏省税务局关于印发《关于阶段性减征职工基本医疗保险费的实施方案》的通知</a></span></li>
+<li><em>[<a href='/article/ShangHaiShiCaiShuiFaGui/'>上海市财税法规</a>]</em><span><a href="/article/d9/135560.html" title="国家税务总局上海市税务局关于个人所得税纳税记录网上开具功能上线的提示">国家税务总局上海市税务局关于个人所得税纳税记录网上开具功能上线的提示</a></span></li>
+<li><em>[<a href='/article/JiangSuShengCaiShuiFaGui/'>江苏省财税法规</a>]</em><span><a href="/article/18/135559.html" title="江苏省人力资源和社会保障厅 江苏省财政厅 国家税务总局江苏省税务局关于阶段性减免企业社会保险费的通知">江苏省人力资源和社会保障厅 江苏省财政厅 国家税务总局江苏省税务局关于阶段性减免企业社会保险费的通知</a></span></li>
+<li><em>[<a href='/article/BeiJingShiCaiShuiFaGui/'>北京市财税法规</a>]</em><span><a href="/article/0e/135558.html" title="国家税务总局北京市税务局关于推行区块链电子普通发票有关事项的公告">国家税务总局北京市税务局关于推行区块链电子普通发票有关事项的公告</a></span></li>
+<li><em>[<a href='/article/category_181/'>山西省财税法规</a>]</em><span><a href="/article/53/135557.html" title="晋会协[2020]3号 山西省注册会计师协会关于疫情防控期间有关会员服务工作的通知">晋会协[2020]3号 山西省注册会计师协会关于疫情防控期间有关会员服务工作的通知</a></span></li>
+<li><em>[<a href='/article/BeiJingShiCaiShuiFaGui/'>北京市财税法规</a>]</em><span><a href="/article/2b/135554.html" title="京房公积金发[2020]9号 北京住房公积金管理中心关于妥善应对新冠肺炎疫情落实住房公积金阶段性支持政策的通知">京房公积金发[2020]9号 北京住房公积金管理中心关于妥善应对新冠肺炎疫情落实住房公积金阶段性支持政策的通知</a></span></li>
+<li><em>[<a href='/article/HaiNanShengCaiShuiFaGui/'>海南省财税法规</a>]</em><span><a href="/article/6c/135548.html" title="琼税函[2020]48号 国家税务总局海南省税务局关于全面推行容缺办理有关事项的通知">琼税函[2020]48号 国家税务总局海南省税务局关于全面推行容缺办理有关事项的通知</a></span></li>
+
+            </ul>
+        </div>
+    	<!--/indexBox-->
+    	<div class="col-sm-6 indexBox">
+            <!--indexBox-->
+            <dl class="clearfix blue">
+                <dt class="fl">税收优惠</dt>
+                <dd class="fl">
+                	<a href="/article/ZengZhiShuiYouHuiZhengCe/" class="hidden[field:global name=autoindex/]">增值税优惠政策</a><a href="/article/SuoDeShuiYouHuiZhengCe/" class="hidden[field:global name=autoindex/]">所得税优惠政策</a><a href="/article/GaoXinJiShuShuiShouYouHui/" class="hidden[field:global name=autoindex/]">高新技术税收优惠</a><a href="/article/GeRenSuoDeShuiYouHui/" class="hidden[field:global name=autoindex/]">个人所得税优惠</a>
+                </dd>
+                <dd class="fr"><a href="/article/ShuiShouYouHui/"><span>更多</span></a></dd>
+            </dl>
+            <div class="clearfix mt15">
+            	<a href="/article/5d/134741.html" title="EXW方式报关出口可按规定适用增值税退（免）税政策" class="fl"><img alt="EXW方式报关出口可按规定适用增值税退（免）税政策" src="/uploads/allimg/200117/13-20011G0252E39-lp.jpg"></a>
+                <div class="fl">
+                    <a title="EXW方式报关出口可按规定适用增值税退（免）税政策" href="/article/5d/134741.html"><font>EXW方式报关出口可按规定适用增值税退（免）税政策</font></a>
+                    <p class="mt5"><a title="EXW方式报关出口可按规定适用增值税退（免）税政策" href="/article/5d/134741.html">2019年12月29日，本公众号转发了一张福建省税务局纳税服务中心的答复，答复认为EXW方...</a><a title="EXW方式报关出口可按规定适用增值税退（免）税政策" href="/article/5d/134741.html"><em>[详情]</em></a></p>
+                </div>
+
+            </div>
+            <ul>
+                <li><em>[<a href='/article/SuoDeShuiYouHuiZhengCe/'>所得税优惠政策</a>]</em><span><a href="/article/ff/135484.html" title="2019年企业所得税汇算清缴，如何理解这些新政策">2019年企业所得税汇算清缴，如何理解这些新政策</a></span></li>
+<li><em>[<a href='/article/QiTaShuiShouYouHuiZhengCe/'>其他税收优惠政策</a>]</em><span><a href="/article/c9/134837.html" title="营改增后的土地增值税清算收入是否包含差额增值税的税企争议">营改增后的土地增值税清算收入是否包含差额增值税的税企争议</a></span></li>
+<li><em>[<a href='/article/XingYeShuiShouYouHuiZheng/'>行业税收优惠政策</a>]</em><span><a href="/article/95/134781.html" title="医疗保障有关税收优惠总结">医疗保障有关税收优惠总结</a></span></li>
+<li><em>[<a href='/article/ZengZhiShuiYouHuiZhengCe/'>增值税优惠政策</a>]</em><span><a href="/article/5d/134741.html" title="EXW方式报关出口可按规定适用增值税退（免）税政策">EXW方式报关出口可按规定适用增值税退（免）税政策</a></span></li>
+<li><em>[<a href='/article/GaoXinJiShuShuiShouYouHui/'>高新技术税收优惠</a>]</em><span><a href="/article/93/134041.html" title="企业保持高新资格需注意的事项">企业保持高新资格需注意的事项</a></span></li>
+<li><em>[<a href='/article/SuoDeShuiYouHuiZhengCe/'>所得税优惠政策</a>]</em><span><a href="/article/a1/133872.html" title="高新技术企业异地搬迁，怎么搬？">高新技术企业异地搬迁，怎么搬？</a></span></li>
+<li><em>[<a href='/article/GeRenSuoDeShuiYouHui/'>个人所得税优惠</a>]</em><span><a href="/article/c2/133645.html" title="2020年度继续享受专项附加扣除操作指引（自然人税收管理系统手机APP/网页版）">2020年度继续享受专项附加扣除操作指引（自然人税收管理系统手机APP/网页版）</a></span></li>
+<li><em>[<a href='/article/XingYeShuiShouYouHuiZheng/'>行业税收优惠政策</a>]</em><span><a href="/article/9e/133414.html" title="旅游服务业相关涉税问题总结">旅游服务业相关涉税问题总结</a></span></li>
+<li><em>[<a href='/article/CanJiRenShuiShouYouHui/'>残疾人税收优惠</a>]</em><span><a href="/article/16/133373.html" title="残疾人税收优惠汇集">残疾人税收优惠汇集</a></span></li>
+<li><em>[<a href='/article/ZengZhiShuiYouHuiZhengCe/'>增值税优惠政策</a>]</em><span><a href="/article/92/132792.html" title="境内外收入不区分，增值税优惠难落袋">境内外收入不区分，增值税优惠难落袋</a></span></li>
+
+            </ul>
+            <!--/indexBox-->
+        </div>
+    </div>
+</div>
+<!--/box2-->
+<!--首页横屏广告4-->
+<div class="fullScreenAd container hidden-xs mt20"></div>
+<!--/首页横屏广告4-->
+<!--box2-->
+<div id="box2" class="container mt20">
+	<div class="row">
+    	<!--indexBox-->
+    	
+        </div>
+    </div>
+</div>
+<!--/box2-->
+<!--flinks-->
+<div id="flinks" class="container mt20">
+	<dl class="row">
+    	<dt class="col-xs-1">友情/链接</dt>
+        <dd class="col-xs-11 clearfix">
+        	
+        	<a href='http://www.shui5.cn/article/89/84485.html' target='_blank'>企业所得税法规</a> 
+            
+        	<a href='http://www.shui5.cn/article/b4/51663.html' target='_blank'>个人所得税法规</a> 
+            
+        	<a href='http://www.shui5.cn/article/5c/46627.html' target='_blank'>土地增值税法规</a> 
+            
+        	<a href='http://www.shui5.cn/article/18/113386.html' target='_blank'>增值税法规</a> 
+            
+        </dd>
+    </dl>
+</div>
+<!--/flinks-->
+<div id="rightImg" style="display: none">
+        
+</div>
+<!--footer-->
+<div id="footerBg">
+    <div id="footer" class="container" style="position:relative;">
+        <ul class="clearfix">
+            <li class="li1"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=251507643&site=qq&menu=yes">商务合作</a></li>
+
+            <li class="li2"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=251507643&site=qq&menu=yes">信息举报</a></li>
+
+            <li class="li3"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=251507643&site=qq&menu=yes">联系站长</a></li>
+
+            <li class="li4"><a target="_blank" href="mailto:251507643@qq.com">发送邮件</a></li>
+
+            <li class="li5"><a target="_blank" href="/article/48/113738.html">关于我们</a></li>
+
+        </ul>
+        <p>运营商：上海恒恪信息技术服务中心 <span class="hidden-xs">地址：上海市青浦区华新镇华腾路1288号1幢5层D区599室 </span></p>
+             </a></span></p>
+  <div class="botbox">
+<p><span class="hidden-xs">主办单位：上海恒恪信息技术服务中心 沪公网安备31011502008096号</a><a href="http://www.beian.miit.gov.cn/" target="_blank" style="padding-right:1em;">沪ICP备19018763号</a></span></p>
+    </div>
+        <p><span class="hidden-xs">站长QQ:251507643</span> 微博（weibo.com/shui5）微信公众号：税屋（shui5cn 服务号） <span class="hidden-xs"> </span></p>
+      
+         
+    </div>
+</div>
+<!--/footer-->
+<!-- GA统计代码 -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82823419-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+    /* 创建于 2015-02-15*/
+    var cpro_id = "u1954196";
+</script>
+<script type="text/javascript" src="http://cpro.baidustatic.com/cpro/ui/cnw.js"></script>
+
+<!-- 百度统计代码 -->
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?ec49e5ad761d1fef16cf05e64b429224";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script src="/js/custom.js"></script>
+
+
+<script>
+$(function(){
+	//分站
+	var i=1;
+	$("#header .fenzhan span").click(function(){
+		if(i == 1){
+			$("#header .fenzhan ul").show();
+			i++;
+		}else{
+			$("#header .fenzhan ul").hide();
+			i=1;
+		}
+	})
+	//滚动文字
+	$(".txtScroll-left").slide({mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,scroll:1,vis:4,interTime:5000});
+})
+</script>
+
+</body>
+</html>
