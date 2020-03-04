@@ -31,7 +31,7 @@ html = '''
 p = PyQuery(txtContent)
 
 
-titles = p('#list-container').find(".title")
+titles = p('#list-container') .find(".title")
 
 titleArr = "[]"
 for a in titles:
