@@ -36,13 +36,16 @@
 - `python3`
 
   - 只有`int`,没有 long
-  - 整型除法会保留小数
 
-    ```py
+## 浮点数 `float`
 
-       a = 19 / 3
-        print(a)
+```py
+type(1.1)
+type(1+0.1)
+type(1+1.0)
+type(1*1.0)
+type(2/2)
 
-    打印结果: 6.333333333333333
+<class 'float'>
 
-    ```
+```
