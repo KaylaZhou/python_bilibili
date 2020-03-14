@@ -28,7 +28,7 @@
 
 ```
 
-    type({})
+    print(type({}))
 
 
 <class 'dict'>

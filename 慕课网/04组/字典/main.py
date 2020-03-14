@@ -11,4 +11,5 @@ def dict_1():
 # value 值,可以是 str,int,float,list,set,dict
 
 
-dict_1()
+# dict_1()
+print({1: 'hello', '1': 'kayla', 'A': {'北京'}, 'B': ['上海'], 'C': '广州'}['A'])

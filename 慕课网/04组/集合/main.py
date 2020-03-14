@@ -38,9 +38,21 @@ def trait():
 
 # trait()
 
-print(type({}))
-# <class 'dict'>
-print(type(set()))
-# <class 'set'>
-print(len(set()))
-# o
+
+def xx():
+
+    print(type({}))
+    # <class 'dict'>
+    print(type(set()))
+    # <class 'set'>
+    print(len(set()))
+    # o
+
+
+# xx()
+print(len({1, 2, 3, 4, 5}))
+print(1 in {1, 2, 3, 4, 5})
+print(1 not in {1, 2, 3, 4, 5})
+print({1, 2, 3, 4} - {2, 4})
+print({1, 2, 3, 4} & {2, 4})
+print({1, 2, 3, 4} | {2, 4})

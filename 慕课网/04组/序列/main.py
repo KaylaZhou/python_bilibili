@@ -7,14 +7,11 @@
 
 def all():
     # 序号:
-
+    # 每个list, str, tuple元素都对应一个序号
     print(['how', 'are', 'you'][1])  # are
-    # 每个list元素都对应一个序号
     print('how are you'[2])  # o
-    # 每个str元素都对应一个序号
     print((1, 2, 3, 4, 5)[4])  # 5
 
-    # 每个tuple元素都对应一个序号
 # all()
 
 
@@ -28,18 +25,12 @@ def all_1():
 # all_1()
 
 
-# len,求序列中有多少个元素
 def num():
+    # len,求序列中有多少个元素
 
     print(len([1, 2, 3, 4, 5, 6]))
     print(len('hello world'))
     print(len(('hello world')))
-
-
-# 输出结果:6
-#         11
-#         11
-
 
 # num()
 
@@ -49,12 +40,30 @@ def value():
     print(max([1, 2, 3, 6, 8, 10, 7]))
     print(min([1, 2, 3, 6, 8, 10, 7]))
     print(max('hello world'))
+
     print(min('hello world'))  # 为空值,涉及到字符编码 ascll码
-    print(min('helloworld'))  # 去掉空格后
+    print(min('helloworld'))  # 去掉空格后 ,输出 d
 
 
-value()
-# print(ord('u'))
-# print(ord('k'))
-# print(ord('w'))
-# print(ord(' '))  # 空字符串,对应的ascll码值为32
+# value()
+
+
+def x():
+    # ord 查看ascll码
+    print(ord('u'))
+    print(ord('k'))
+    print(ord('w'))
+    print(ord(' '))  # 空字符串,对应的ascll码值为32
+
+
+x()
+
+
+def cc():
+    # 逻辑判断 in,not in
+    print(3 in [1, 2, 3, 4, 5, 6])        # True
+    print(3 not in [1, 2, 3, 4, 5, 6])    # False
+    print(len(['hello', 1, 2, 3, 4, 5]))  # 6
+
+
+# cc()
