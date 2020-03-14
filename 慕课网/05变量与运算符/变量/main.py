@@ -131,8 +131,14 @@ def genre_2():
     print('python'[0])      # p
 
     # 'python'[0]='o'
-    print(id('python'[0]='o'))  # 报错,str不可改变类型
-    print('python'[0]='o')
+    print(id('python'[0] == 'o'))  # 报错,str不可改变类型
+    print('python'[0] == 'o')
 
 
-genre_2()
+# genre_2()
+
+
+a = [1, 2, 3, 4]
+b = a
+a[0] = '1'
+print(a)
