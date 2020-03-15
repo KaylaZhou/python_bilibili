@@ -126,19 +126,65 @@ def genre():
 
 def genre_2():
     # 不可变类型:
-
     print(id('python'[0]))  # 3205035870576
     print('python'[0])      # p
 
     # 'python'[0]='o'
-    print(id('python'[0] == 'o'))  # 报错,str不可改变类型
-    print('python'[0] == 'o')
-
+    # print(id('python'[0]='o'))  # 报错,str不可改变类型
+    # print('python'[0]='o')
+# 运行时错误 - print
+# 编译时错误 -
 
 # genre_2()
 
 
-a = [1, 2, 3, 4]
-b = a
-a[0] = '1'
-print(a)
+def class_1():
+
+    # 值类型int
+    a = 1
+    b = a
+    a = 3
+    print(a)
+    print('b..', b)
+    print('.............')
+
+    # 引用类型 list可变的
+    a = [1, 2, 3]
+    b = a
+    a[0] = '1'  # 数字是可变的
+    print(a)
+    print('b..', b)
+
+
+# class_1()
+
+
+def lass_2():
+    a = 'hello'
+    print(id(a))
+    print(id(a))
+
+    a = a + 'python'
+    # print(a)
+    print(id(a))
+
+    # 反向验证:str不可变
+    print('python'[0])  # 可以访问
+    print('python'[0:3])
+    print('python'[0] == 'n')  # 不能改变
+
+
+# lass_2()
+
+
+# 列表的可变 与元组的不可变
+
+a = (1, 2, 3, [1, 2, ['a', 'b', 'c']])
+print(a[3])
+print(a[3][2])
+print(a[3][2][1])
+
+
+b = (1, 2, 3, [1, 2, 4])
+b[3][1] = '2'
+print(b)
