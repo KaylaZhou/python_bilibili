@@ -16,4 +16,4 @@ class Common():
 
 # VIP.YELLOW  VIP.GREEN VIP.BLACK (用枚举的方式表示类型)
 print(VIP.YELLOW)
-VIP.YELLOW = 6  # 报错,枚举常量不可变
+# VIP.YELLOW = 6  # 报错,枚举常量不可变

@@ -13,9 +13,9 @@ def a():
     print(r1)
 
 
-# a()
+a()
 
 # reduce()的初始值
-list_x = ['1', '2', '3', '4']
-r = reduce(lambda x, y: x+y, list_x, 'aaa')
-print(r)
+# list_x = ['1', '2', '3', '4']
+# r = reduce(lambda x, y: x+y, list_x, 'aaa')
+# print(r)
