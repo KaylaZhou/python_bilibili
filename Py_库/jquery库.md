@@ -1,10 +1,12 @@
 # python 库
 
-## jquery
+## **jquery**
 
 ### 安装 jquery 库
 
+```shell
     pip install pyquery
+```
 
 ### 检查 jquery 库
 
